@@ -61,18 +61,18 @@ void GradeSystem::gradeSystemGrading(){
 		studentLetter = "F";
 }
 }
-void GradeSystem::gradeSystemDisplay(int a){
-	cout << a << studentTotal << "(" << studentLetter << ")" << endl;
+void GradeSystem::gradeSystemDisplay(int x){
+	cout << x << studentTotal << "(" << studentLetter << ")" << endl;
 }
 
 int main()
 {
 	int x;
-	int addatt;
-	int addquiz;
-	int addassig;
-	int addmid;
-	int addfinal;
+	int att;
+	int quiz;
+	int assig;
+	int mid;
+	int final;
 	cout << "    Grading System v1.0    " << endl;
 	cout << "===========================" << endl;				
 	cout << "Enter number of Students : "; 
@@ -84,16 +84,16 @@ int main()
 		cout << "Enter Grade For Student " << i+1 << endl;
 		cout << "===========================" << endl;	
 		cout << "Attendace	: "; 
-		cin >> addatt;
+		cin >> att;
 		cout << "Quiz		: "; 
-		cin >> addquiz;
+		cin >> quiz;
 		cout << "Assigment	: "; 
-		cin >> addassig;
+		cin >> assig;
 		cout << "Mid		: "; 
-		cin >> addmid;
+		cin >> mid;
 		cout << "Final		: "; 
-		cin >> addfinal;
-		student[i].gradeSystemTotal(addatt, addquiz, addassig, addmid, addfinal);	
+		cin >> final;
+		student[i].gradeSystemTotal(att, quiz, assig, mid, final);	
 		student[i].gradeSystemGrading();
 	}
 	
