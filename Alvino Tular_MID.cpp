@@ -62,7 +62,7 @@ void GradeSystem::gradeSystemGrading(){
 }
 }
 void GradeSystem::gradeSystemDisplay(int x){
-	cout << x << studentTotal << "(" << studentLetter << ")" << endl;
+	cout << x << ".		" << studentTotal << "(" << studentLetter << ")" << endl;
 }
 
 int main()
